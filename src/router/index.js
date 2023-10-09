@@ -10,7 +10,7 @@ const routes = [
   {
     path: "/about",
     name: "about",
-    component: () => import("app-remote/AboutView.vue"),
+    component: () => import("app_remote/AboutView"),
   },
 ];
 
