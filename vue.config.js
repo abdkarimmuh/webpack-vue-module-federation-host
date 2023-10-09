@@ -8,6 +8,9 @@ module.exports = defineConfig({
     },
   },
   configureWebpack: {
+    devServer: {
+      headers: { "Access-Control-Allow-Origin": "*" }
+    },
     plugins: [
       new ModuleFederationPlugin({
         remotes: {
